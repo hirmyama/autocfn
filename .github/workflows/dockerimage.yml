@@ -2,13 +2,20 @@ name: Docker Image CI
 
 on: [push]
 
+# jobs:
+#   hellojob:
+#     name: hello
+#     runs-on: [ubuntu-latest]
+#     steps:
+#       - uses: ./.github/actions/action
+
 jobs:
-  hellojob:
-    name: hello
-    runs-on: [ubuntu-latest]
+  deploy:
+    runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/actions/action
-        
+    - uses: actions/checkout@v1
+    - uses: ./.github/actions/action
+
         
       
        
