@@ -2,6 +2,12 @@ name: Docker Image CI
 
 on: [push]
 
+jobs:
+  job1:
+    container:
+      image: Dockerfile
+      
+       
 # jobs:
 #   build:
 
