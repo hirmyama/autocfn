@@ -3,9 +3,8 @@ name: Docker Image CI
 on: [push]
 
 jobs:
-  job1:
-    container:
-      image: Dockerfile
+  hellojob:
+    name: hello
       
        
 # jobs:
