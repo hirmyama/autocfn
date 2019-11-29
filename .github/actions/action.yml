@@ -1,0 +1,10 @@
+# https://github.com/MGenteluci/cloudformation-deploy-action/blob/master/action.yml
+
+name: 'CloudFormation Deploy Action'
+description: 'Deploy AWS CloudFormation Stack'
+#branding:
+#  icon: 'upload-cloud'
+#  color: 'orange'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
