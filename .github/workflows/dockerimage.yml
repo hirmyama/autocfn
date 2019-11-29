@@ -13,8 +13,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - uses: ./.github/actions/action.yml
+#    - uses: actions/checkout@v1
+    - uses: hirmyama/autocfn-create-stack@master
 
         
       
