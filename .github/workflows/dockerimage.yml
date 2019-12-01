@@ -5,5 +5,11 @@ on: [push]
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      AWS_DEFAULT_REGION: ap-northeast-1
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      STACK_REPOSITORY: https://github.com/hirmyama/autocfn-sample-stack.git
+      COMMAND: 'cdk deploy'
     steps:
     - uses: hirmyama/autocfn-create-stack@master
